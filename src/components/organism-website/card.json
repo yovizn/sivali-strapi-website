@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_organism_website_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.placeholder",
+      "required": true
+    },
+    "badge": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atom-website.placeholder"
+    }
+  }
+}

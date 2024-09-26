@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_molecule_website_dashboard_footer_tables",
+  "info": {
+    "displayName": "Footer Table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "previousButton": {
+      "type": "string",
+      "required": true
+    },
+    "nextButton": {
+      "type": "string",
+      "required": true
+    },
+    "infoTable": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

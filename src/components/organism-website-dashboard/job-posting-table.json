@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_organism_website_dashboard_job_posting_tables",
+  "info": {
+    "displayName": "Job Posting Table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idPosting": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    },
+    "experience": {
+      "type": "string",
+      "required": true
+    },
+    "education": {
+      "type": "string",
+      "required": true
+    },
+    "term": {
+      "type": "string",
+      "required": true
+    },
+    "jobDescription": {
+      "type": "string",
+      "required": true
+    },
+    "action": {
+      "type": "string",
+      "required": true
+    },
+    "actionView": {
+      "type": "string",
+      "required": true
+    },
+    "actionEdit": {
+      "type": "string",
+      "required": true
+    },
+    "actionRemove": {
+      "type": "string",
+      "required": true
+    },
+    "footerTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website-dashboard.footer-table",
+      "required": true
+    }
+  }
+}

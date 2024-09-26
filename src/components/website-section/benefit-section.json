@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_website_section_benefit_sections",
+  "info": {
+    "displayName": "Benefit Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "benefitCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "organism-website.benefit-card",
+      "max": 4,
+      "required": true
+    },
+    "stepTitle": {
+      "type": "string",
+      "required": true
+    },
+    "stepCard": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "max": 4,
+      "component": "organism-website.step-card"
+    }
+  }
+}

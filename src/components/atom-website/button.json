@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_atom_website_buttons",
+  "info": {
+    "displayName": "Button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

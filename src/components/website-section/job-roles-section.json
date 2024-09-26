@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_website_section_job_roles_sections",
+  "info": {
+    "displayName": "Job Roles Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "organism-website.card",
+      "required": true,
+      "max": 6
+    }
+  }
+}

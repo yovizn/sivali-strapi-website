@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_organism_website_dashboard_header_titles",
+  "info": {
+    "displayName": "Header Title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

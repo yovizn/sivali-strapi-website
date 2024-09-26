@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_website_section_contact_sections",
+  "info": {
+    "displayName": "Contact Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atom-website.button",
+      "max": 2,
+      "required": true
+    }
+  }
+}

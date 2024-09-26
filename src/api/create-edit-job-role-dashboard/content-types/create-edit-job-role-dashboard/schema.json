@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "create_edit_job_role_dashboards",
+  "info": {
+    "singularName": "create-edit-job-role-dashboard",
+    "pluralName": "create-edit-job-role-dashboards",
+    "displayName": "Create / Edit Job Role Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobRole": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "submitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.header-title",
+      "required": true
+    }
+  }
+}

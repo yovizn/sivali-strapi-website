@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_atom_website_dashboard_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

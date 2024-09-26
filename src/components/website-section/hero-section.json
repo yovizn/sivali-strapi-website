@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_website_section_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atom-website.button",
+      "required": true,
+      "max": 2,
+      "min": 1
+    }
+  }
+}

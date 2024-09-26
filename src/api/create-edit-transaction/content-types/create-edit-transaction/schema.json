@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "create_edit_transactions",
+  "info": {
+    "singularName": "create-edit-transaction",
+    "pluralName": "create-edit-transactions",
+    "displayName": "Create / Edit Transaction Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "salary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "quota": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "topUpCreaditButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button"
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.header-title"
+    }
+  }
+}

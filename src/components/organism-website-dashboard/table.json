@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_organism_website_dashboard_tables",
+  "info": {
+    "displayName": "Table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idTable": {
+      "type": "string",
+      "required": true
+    },
+    "dateTable": {
+      "type": "string",
+      "required": true
+    },
+    "nameTable": {
+      "type": "string",
+      "required": true
+    },
+    "amountTable": {
+      "type": "string",
+      "required": true
+    },
+    "statusTable": {
+      "type": "string",
+      "required": true
+    },
+    "footerTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website-dashboard.footer-table",
+      "required": true
+    }
+  }
+}

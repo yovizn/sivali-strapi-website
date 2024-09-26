@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_atom_website_placeholders",
+  "info": {
+    "displayName": "Placeholder"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

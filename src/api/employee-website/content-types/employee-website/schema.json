@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "employee_websites",
+  "info": {
+    "singularName": "employee-website",
+    "pluralName": "employee-websites",
+    "displayName": "Employee Website",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website-section.hero-section",
+      "required": true
+    },
+    "jobRoleSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website-section.job-roles-section"
+    },
+    "benefitSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website-section.benefit-section",
+      "required": true
+    },
+    "contactSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website-section.contact-section",
+      "required": true
+    }
+  }
+}

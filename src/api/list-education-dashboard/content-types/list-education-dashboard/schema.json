@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "list_education_dashboards",
+  "info": {
+    "singularName": "list-education-dashboard",
+    "pluralName": "list-education-dashboards",
+    "displayName": "List Education Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "createNewEducationButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "educationTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.table",
+      "required": true
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.header-title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "list_attendances",
+  "info": {
+    "singularName": "list-attendance",
+    "pluralName": "list-attendances",
+    "displayName": "List Attendance Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullTIme": {
+      "type": "string",
+      "required": true
+    },
+    "fullTImeTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.list-attendance-table"
+    },
+    "partTime": {
+      "type": "string",
+      "required": true
+    },
+    "partTimeTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.list-attendance-table"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.header-title",
+      "required": true
+    }
+  }
+}

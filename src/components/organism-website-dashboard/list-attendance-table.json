@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_organism_website_dashboard_list_attendance_tables",
+  "info": {
+    "displayName": "List Attendance Table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idListAttendance": {
+      "type": "string",
+      "required": true
+    },
+    "nameListAttendance": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "shift": {
+      "type": "string",
+      "required": true
+    },
+    "checkIn": {
+      "type": "string",
+      "required": true
+    },
+    "checkOut": {
+      "type": "string",
+      "required": true
+    },
+    "jobName": {
+      "type": "string"
+    },
+    "jobDescription": {
+      "type": "string",
+      "required": true
+    },
+    "locaitionIn": {
+      "type": "string",
+      "required": true
+    },
+    "locationOut": {
+      "type": "string",
+      "required": true
+    },
+    "photoIn": {
+      "type": "string",
+      "required": true
+    },
+    "photoOut": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "required": true
+    },
+    "actionView": {
+      "type": "string",
+      "required": true
+    },
+    "footerTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website-dashboard.footer-table",
+      "required": true
+    }
+  }
+}

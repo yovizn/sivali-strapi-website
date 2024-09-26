@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "create_edit_companies",
+  "info": {
+    "singularName": "create-edit-company",
+    "pluralName": "create-edit-companies",
+    "displayName": "Create / Edit Company Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "salary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "quota": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "submitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.header-title",
+      "required": true
+    }
+  }
+}

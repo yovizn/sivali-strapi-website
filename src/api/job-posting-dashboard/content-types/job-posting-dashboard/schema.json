@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "job_posting_dashboards",
+  "info": {
+    "singularName": "job-posting-dashboard",
+    "pluralName": "job-posting-dashboards",
+    "displayName": "Job Posting Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "createNewJobButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "partTime": {
+      "type": "string",
+      "required": true
+    },
+    "partTimeTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.job-posting-table",
+      "required": true
+    },
+    "draft": {
+      "type": "string",
+      "required": true
+    },
+    "draftTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.job-posting-table"
+    },
+    "postExpired": {
+      "type": "string",
+      "required": true
+    },
+    "postExpiredTable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organism-website-dashboard.job-posting-table",
+      "required": true
+    }
+  }
+}

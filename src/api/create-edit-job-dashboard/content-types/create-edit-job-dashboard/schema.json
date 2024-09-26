@@ -1,0 +1,214 @@
+{
+  "kind": "singleType",
+  "collectionName": "create_edit_job_dashboards",
+  "info": {
+    "singularName": "create-edit-job-dashboard",
+    "pluralName": "create-edit-job-dashboards",
+    "displayName": "Create / Edit Job Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "organism-website-dashboard.header-title"
+    },
+    "titleForm": {
+      "type": "string",
+      "required": true
+    },
+    "companyName": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "jobType": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "jobName": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "jobCategoryDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "jobTItleDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "jobSpecializationDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "lastEducationDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "genderDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "studyDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "experience": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "skill": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "jobDescriptionDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "quota": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "minimumQualification": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "picName": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "picPhoneNumber": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "salary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "province": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "city": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "district": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "village": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "jobPeriod": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "startPosting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "addressTitle": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input"
+    },
+    "gender2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecule-website.input",
+      "required": true
+    },
+    "shift": {
+      "type": "string",
+      "required": true
+    },
+    "shiftButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "shiftIn": {
+      "type": "string",
+      "required": true
+    },
+    "shiftOut": {
+      "type": "string"
+    },
+    "shiftQuota": {
+      "type": "string",
+      "required": true
+    },
+    "shiftAction": {
+      "type": "string"
+    },
+    "shiftActionButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    },
+    "submitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atom-website-dashboard.button",
+      "required": true
+    }
+  }
+}
