@@ -30,7 +30,7 @@
       "repeatable": false,
       "component": "organism-website-dashboard.list-attendance-table"
     },
-    "Heading": {
+    "heading": {
       "type": "component",
       "repeatable": false,
       "component": "organism-website-dashboard.header-title",

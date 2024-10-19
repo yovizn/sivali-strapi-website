@@ -1138,7 +1138,7 @@ export interface ApiListAttendanceListAttendance
       'organism-website-dashboard.list-attendance-table',
       false
     >;
-    Heading: Schema.Attribute.Component<
+    heading: Schema.Attribute.Component<
       'organism-website-dashboard.header-title',
       false
     > &
@@ -1495,6 +1495,33 @@ export interface ApiListTransactionDashboardListTransactionDashboard
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::list-transaction-dashboard.list-transaction-dashboard'
+    >;
+  };
+}
+
+export interface ApiRoleBadgeRoleBadge extends Struct.CollectionTypeSchema {
+  collectionName: 'role_badges';
+  info: {
+    singularName: 'role-badge';
+    pluralName: 'role-badges';
+    displayName: 'Role Badge';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::role-badge.role-badge'
     >;
   };
 }
@@ -1896,6 +1923,7 @@ declare module '@strapi/strapi' {
       'api::list-job-role.list-job-role': ApiListJobRoleListJobRole;
       'api::list-job-specializations-dashboard.list-job-specializations-dashboard': ApiListJobSpecializationsDashboardListJobSpecializationsDashboard;
       'api::list-transaction-dashboard.list-transaction-dashboard': ApiListTransactionDashboardListTransactionDashboard;
+      'api::role-badge.role-badge': ApiRoleBadgeRoleBadge;
       'admin::permission': AdminPermission;
       'admin::user': AdminUser;
       'admin::role': AdminRole;

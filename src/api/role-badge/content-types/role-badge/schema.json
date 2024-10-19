@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_badges",
+  "info": {
+    "singularName": "role-badge",
+    "pluralName": "role-badges",
+    "displayName": "Role Badge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -12,10 +12,10 @@
       "component": "molecule-website.placeholder",
       "required": true
     },
-    "badge": {
-      "type": "component",
-      "repeatable": true,
-      "component": "atom-website.placeholder"
+    "roleBadges": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::role-badge.role-badge"
     }
   }
 }

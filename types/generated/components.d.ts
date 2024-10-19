@@ -180,6 +180,50 @@ export interface OrganismWebsiteDashboardHeaderTitle
   };
 }
 
+export interface OrganismWebsiteStepCard extends Struct.ComponentSchema {
+  collectionName: 'components_organism_website_step_cards';
+  info: {
+    displayName: 'Step Card';
+    description: '';
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    subTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface OrganismWebsiteCard extends Struct.ComponentSchema {
+  collectionName: 'components_organism_website_cards';
+  info: {
+    displayName: 'Card';
+    description: '';
+  };
+  attributes: {
+    cardHeader: Schema.Attribute.Component<
+      'molecule-website.placeholder',
+      false
+    > &
+      Schema.Attribute.Required;
+    roleBadges: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::role-badge.role-badge'
+    >;
+  };
+}
+
+export interface OrganismWebsiteBenefitCard extends Struct.ComponentSchema {
+  collectionName: 'components_organism_website_benefit_cards';
+  info: {
+    displayName: 'Benefit Card';
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    subTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface MoleculeWebsiteDashboardFooterTable
   extends Struct.ComponentSchema {
   collectionName: 'components_molecule_website_dashboard_footer_tables';
@@ -226,47 +270,6 @@ export interface AtomWebsiteDashboardButton extends Struct.ComponentSchema {
   };
 }
 
-export interface OrganismWebsiteStepCard extends Struct.ComponentSchema {
-  collectionName: 'components_organism_website_step_cards';
-  info: {
-    displayName: 'Step Card';
-    description: '';
-  };
-  attributes: {
-    title: Schema.Attribute.String & Schema.Attribute.Required;
-    subTitle: Schema.Attribute.String & Schema.Attribute.Required;
-    image: Schema.Attribute.Media<'images'>;
-  };
-}
-
-export interface OrganismWebsiteCard extends Struct.ComponentSchema {
-  collectionName: 'components_organism_website_cards';
-  info: {
-    displayName: 'Card';
-    description: '';
-  };
-  attributes: {
-    cardHeader: Schema.Attribute.Component<
-      'molecule-website.placeholder',
-      false
-    > &
-      Schema.Attribute.Required;
-    badge: Schema.Attribute.Component<'atom-website.placeholder', true>;
-  };
-}
-
-export interface OrganismWebsiteBenefitCard extends Struct.ComponentSchema {
-  collectionName: 'components_organism_website_benefit_cards';
-  info: {
-    displayName: 'Benefit Card';
-  };
-  attributes: {
-    title: Schema.Attribute.String & Schema.Attribute.Required;
-    subTitle: Schema.Attribute.String & Schema.Attribute.Required;
-    image: Schema.Attribute.Media<'images'>;
-  };
-}
-
 export interface AtomWebsitePlaceholder extends Struct.ComponentSchema {
   collectionName: 'components_atom_website_placeholders';
   info: {
@@ -300,13 +303,13 @@ declare module '@strapi/strapi' {
       'organism-website-dashboard.list-attendance-table': OrganismWebsiteDashboardListAttendanceTable;
       'organism-website-dashboard.job-posting-table': OrganismWebsiteDashboardJobPostingTable;
       'organism-website-dashboard.header-title': OrganismWebsiteDashboardHeaderTitle;
+      'organism-website.step-card': OrganismWebsiteStepCard;
+      'organism-website.card': OrganismWebsiteCard;
+      'organism-website.benefit-card': OrganismWebsiteBenefitCard;
       'molecule-website-dashboard.footer-table': MoleculeWebsiteDashboardFooterTable;
       'molecule-website.placeholder': MoleculeWebsitePlaceholder;
       'molecule-website.input': MoleculeWebsiteInput;
       'atom-website-dashboard.button': AtomWebsiteDashboardButton;
-      'organism-website.step-card': OrganismWebsiteStepCard;
-      'organism-website.card': OrganismWebsiteCard;
-      'organism-website.benefit-card': OrganismWebsiteBenefitCard;
       'atom-website.placeholder': AtomWebsitePlaceholder;
       'atom-website.button': AtomWebsiteButton;
     }
